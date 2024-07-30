@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2c3e50;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
+    --border-color: #bdc3c7;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
+  
+  .flight-status-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flight-status-list li {
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flight-status-list li span {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .notification-preferences form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .notification-preferences input,
+  .notification-preferences select {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .notification-preferences button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notification-preferences button:hover {
+    background-color: #2980b9;
+  }
+  
+  @media (max-width: 600px) {
+    .App {
+      padding: 10px;
+    }
+    
+    .notification-preferences form {
+      gap: 10px;
+    }
+  }
